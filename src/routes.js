@@ -23,7 +23,8 @@ import Maps from "views/examples/Maps.js";
 import Tables from "views/examples/Tables.js";
 import Icons from "views/examples/Icons.js";
 
-import Dashboard from "pages/Dashboard.js";
+import SalesDashboard from "pages/SalesDashboard.js";
+import PaymentsDashboard from "pages/PaymentsDashboard.js";
 import Login from "pages/Login.js";
 import Profile from "pages/Profile.js";
 import Consulting from "pages/Consulting.js";
@@ -80,10 +81,38 @@ var routes = [
 		layout: "/admin",
 	},
 	{
-		path: "/dashboard",
-		name: "Dashboard",
+		path: "/sales-summary",
+		name: "Sales Summary",
 		icon: "ni ni-chart-bar-32 text-primary",
-		component: Dashboard,
+		component: SalesDashboard,
+		layout: "/admin",
+	},
+	{
+		path: "/payment-methods",
+		name: "Payment Methods",
+		icon: "ni ni-chart-bar-32 text-primary",
+		component: PaymentsDashboard,
+		layout: "/admin",
+	},
+	{
+		path: "/category-sales",
+		name: "Category Sales",
+		icon: "ni ni-chart-bar-32 text-primary",
+		component: SalesDashboard,
+		layout: "/admin",
+	},
+	{
+		path: "/employee-sales",
+		name: "Employee Sales",
+		icon: "ni ni-chart-bar-32 text-primary",
+		component: SalesDashboard,
+		layout: "/admin",
+	},
+	{
+		path: "/discounts",
+		name: "Discounts",
+		icon: "ni ni-chart-bar-32 text-primary",
+		component: SalesDashboard,
 		layout: "/admin",
 	},
 	{
