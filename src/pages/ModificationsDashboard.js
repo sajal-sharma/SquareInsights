@@ -38,15 +38,37 @@ import {
 	Col,
 } from "reactstrap";
 
+// core components
+import {
+	chartOptions,
+	parseOptions,
+	sales,
+	orders,
+	timeOfDay,
+} from "variables/charts.js";
+
 import Header from "components/Headers/Header.js";
 
-const PaymentsDashboard = () => {
+const ModificationsDashboard = (props) => {
+	const [activeNav, setActiveNav] = useState(1);
+	const [salesData, setSalesData] = useState("data1");
+
+	if (window.Chart) {
+		parseOptions(Chart, chartOptions());
+	}
+
+	const toggleNavs = (e, index) => {
+		e.preventDefault();
+		setActiveNav(index);
+		setSalesData("data" + index);
+	};
+
 	return (
 		<>
 			<Header />
 
 			<Container className="mt--7" fluid>
-				<Row>
+				<Row className="mt-5">
 					<Col className="mb-5 mb-xl-0" xl="12">
 						<Card className="shadow">
 							<CardHeader className="border-0">
@@ -69,76 +91,32 @@ const PaymentsDashboard = () => {
 								<tbody>
 									<tr>
 										<th scope="row">
-											<b>Card Transactions</b>
+											<b>Vegan Cheese Requests</b>
 										</th>
+										<td>NA</td>
 										<td>
-											<b>2,589</b>
-										</td>
-										<td>2,203</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Swiped</th>
-										<td>
-											<b>2,555</b>
-										</td>
-										<td>2,179</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Keyed</th>
-										<td>
-											<b>32</b>
-										</td>
-										<td>24</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Other</th>
-										<td>
-											<b>2</b>
-										</td>
-										<td>0</td>
-									</tr>
-
-									<tr>
-										<th scope="row">
-											<b>Cash Transactions</b>
-										</th>
-										<td>10</td>
-										<td>
-											<b>248</b>
+											<b>175</b>
 										</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
-											<b>Gift Card Transactions</b>
+											<b>Substitute Meat Requests</b>
 										</th>
-										<td>0</td>
+										<td>42</td>
 										<td>
-											<b>38</b>
+											<b>102</b>
 										</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
-											<b>Other</b>
+											<b>Nut-Free Pesto Requests</b>
 										</th>
+										<td>58</td>
 										<td>
-											<b>18</b>
+											<b>68</b>
 										</td>
-										<td>15</td>
-									</tr>
-
-									<tr>
-										<th scope="row">
-											<b>Total</b>
-										</th>
-										<td>
-											<b>2,617</b>
-										</td>
-										<td>2,504</td>
 									</tr>
 								</tbody>
 							</Table>
@@ -150,4 +128,4 @@ const PaymentsDashboard = () => {
 	);
 };
 
-export default PaymentsDashboard;
+export default ModificationsDashboard;

@@ -25,40 +25,43 @@ import Icons from "views/examples/Icons.js";
 
 import SalesDashboard from "pages/SalesDashboard.js";
 import PaymentsDashboard from "pages/PaymentsDashboard.js";
+import CategoryDashboard from "pages/CategoryDashboard.js";
+import DiscountsDashboard from "pages/DiscountsDashboard.js";
+import ModificationsDashboard from "pages/ModificationsDashboard.js";
 import Login from "pages/Login.js";
 import Profile from "pages/Profile.js";
 import Consulting from "pages/Consulting.js";
 import UpdateProfile from "pages/UpdateProfile.js";
 
 var routes = [
-	{
-		path: "/icons",
-		name: "Icons",
-		icon: "ni ni-planet text-blue",
-		component: Icons,
-		layout: "/admin",
-	},
-	{
-		path: "/maps",
-		name: "Maps",
-		icon: "ni ni-pin-3 text-orange",
-		component: Maps,
-		layout: "/admin",
-	},
-	{
-		path: "/user-profile",
-		name: "User Profile",
-		icon: "ni ni-single-02 text-yellow",
-		component: Profile,
-		layout: "/admin",
-	},
-	{
-		path: "/tables",
-		name: "Tables",
-		icon: "ni ni-bullet-list-67 text-red",
-		component: Tables,
-		layout: "/admin",
-	},
+	// {
+	// 	path: "/icons",
+	// 	name: "Icons",
+	// 	icon: "ni ni-planet text-blue",
+	// 	component: Icons,
+	// 	layout: "/admin",
+	// },
+	// {
+	// 	path: "/maps",
+	// 	name: "Maps",
+	// 	icon: "ni ni-pin-3 text-orange",
+	// 	component: Maps,
+	// 	layout: "/admin",
+	// },
+	// {
+	// 	path: "/user-profile",
+	// 	name: "User Profile",
+	// 	icon: "ni ni-single-02 text-yellow",
+	// 	component: Profile,
+	// 	layout: "/admin",
+	// },
+	// {
+	// 	path: "/tables",
+	// 	name: "Tables",
+	// 	icon: "ni ni-bullet-list-67 text-red",
+	// 	component: Tables,
+	// 	layout: "/admin",
+	// },
 	{
 		path: "/login",
 		name: "Login",
@@ -98,21 +101,21 @@ var routes = [
 		path: "/category-sales",
 		name: "Category Sales",
 		icon: "ni ni-chart-bar-32 text-primary",
-		component: SalesDashboard,
-		layout: "/admin",
-	},
-	{
-		path: "/employee-sales",
-		name: "Employee Sales",
-		icon: "ni ni-chart-bar-32 text-primary",
-		component: SalesDashboard,
+		component: CategoryDashboard,
 		layout: "/admin",
 	},
 	{
 		path: "/discounts",
 		name: "Discounts",
 		icon: "ni ni-chart-bar-32 text-primary",
-		component: SalesDashboard,
+		component: DiscountsDashboard,
+		layout: "/admin",
+	},
+	{
+		path: "/modifications",
+		name: "Modifications",
+		icon: "ni ni-chart-bar-32 text-primary",
+		component: ModificationsDashboard,
 		layout: "/admin",
 	},
 	{

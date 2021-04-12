@@ -69,7 +69,7 @@ const Header = () => {
 												>
 													Customers
 												</CardTitle>
-												<span className="h2 font-weight-bold mb-0">2,780</span>
+												<span className="h2 font-weight-bold mb-0">2,604</span>
 											</div>
 											<Col className="col-auto">
 												<div className="icon icon-shape bg-warning text-white rounded-circle shadow">

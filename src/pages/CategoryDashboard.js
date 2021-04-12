@@ -45,11 +45,12 @@ import {
 	sales,
 	orders,
 	timeOfDay,
+	items,
 } from "variables/charts.js";
 
 import Header from "components/Headers/Header.js";
 
-const SalesDashboard = (props) => {
+const CategoryDashboard = (props) => {
 	const [activeNav, setActiveNav] = useState(1);
 	const [salesData, setSalesData] = useState("data1");
 
@@ -75,9 +76,9 @@ const SalesDashboard = (props) => {
 								<Row className="align-items-center">
 									<div className="col">
 										<h6 className="text-uppercase text-light ls-1 mb-1">
-											History
+											Month to Date
 										</h6>
-										<h2 className="text-white mb-0">Sales</h2>
+										<h2 className="text-white mb-0">Top 5 Categories</h2>
 									</div>
 
 									<div className="col">
@@ -90,8 +91,8 @@ const SalesDashboard = (props) => {
 													href="#pablo"
 													onClick={(e) => toggleNavs(e, 1)}
 												>
-													<span className="d-none d-md-block">Month</span>
-													<span className="d-md-none">M</span>
+													<span className="d-none d-md-block">You</span>
+													<span className="d-md-none">Y</span>
 												</NavLink>
 											</NavItem>
 											<NavItem>
@@ -103,8 +104,8 @@ const SalesDashboard = (props) => {
 													href="#pablo"
 													onClick={(e) => toggleNavs(e, 2)}
 												>
-													<span className="d-none d-md-block">Week</span>
-													<span className="d-md-none">W</span>
+													<span className="d-none d-md-block">Comparables</span>
+													<span className="d-md-none">C</span>
 												</NavLink>
 											</NavItem>
 										</Nav>
@@ -115,56 +116,8 @@ const SalesDashboard = (props) => {
 							<CardBody>
 								<div className="chart">
 									<Line
-										data={sales[salesData]}
-										options={sales.options}
-										getDatasetAtEvent={(e) => console.log(e)}
-									/>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-				</Row>
-
-				<Row className="mt-5">
-					<Col className="mb-5 mb-xl-0" xl="5">
-						<Card className="shadow">
-							<CardHeader className="bg-transparent">
-								<Row className="align-items-center">
-									<div className="col">
-										<h6 className="text-uppercase text-muted ls-1 mb-1">
-											Past Week
-										</h6>
-										<h2 className="mb-0">Total Orders</h2>
-									</div>
-								</Row>
-							</CardHeader>
-
-							<CardBody>
-								<div className="chart">
-									<Bar data={orders.data} options={orders.options} />
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-
-					<Col xl="7">
-						<Card className="bg-gradient-default shadow">
-							<CardHeader className="bg-transparent">
-								<Row className="align-items-center">
-									<div className="col">
-										<h6 className="text-uppercase text-light ls-1 mb-1">
-											Month to Date
-										</h6>
-										<h2 className="text-white mb-0">Time of Day</h2>
-									</div>
-								</Row>
-							</CardHeader>
-
-							<CardBody>
-								<div className="chart">
-									<Line
-										data={timeOfDay["data1"]}
-										options={timeOfDay.options}
+										data={items[salesData]}
+										options={items.options}
 										getDatasetAtEvent={(e) => console.log(e)}
 									/>
 								</div>
@@ -196,38 +149,52 @@ const SalesDashboard = (props) => {
 								<tbody>
 									<tr>
 										<th scope="row">
-											<b>Gross Sales</b>
+											<b>Pizzas</b>
 										</th>
 										<td>
-											<b>$29,149</b>
+											<b>10,847</b>
 										</td>
-										<td>$28,191</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Tax</th>
-										<td>$2,332</td>
-										<td>
-											<b>$2,252</b>
-										</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Tips</th>
-										<td>
-											<b>$285</b>
-										</td>
-										<td>$178</td>
+										<td>9,875</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
-											<b>Total Collected</b>
+											<b>Pastas</b>
 										</th>
 										<td>
-											<b>$26,532</b>
+											<b>6,375</b>
 										</td>
-										<td>$25,761</td>
+										<td>6,333</td>
+									</tr>
+
+									<tr>
+										<th scope="row">
+											<b>Drinks</b>
+										</th>
+										<td>4,395</td>
+										<td>
+											<b>6,102</b>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row">
+											<b>Salads</b>
+										</th>
+										<td>3,598</td>
+										<td>
+											<b>3,964</b>
+										</td>
+									</tr>
+
+									<tr>
+										<th scope="row">
+											<b>Calzones</b>
+										</th>
+										<td>
+											<b>2,275</b>
+										</td>
+										<td>1,838</td>
 									</tr>
 								</tbody>
 							</Table>
@@ -239,4 +206,4 @@ const SalesDashboard = (props) => {
 	);
 };
 
-export default SalesDashboard;
+export default CategoryDashboard;

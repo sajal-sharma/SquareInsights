@@ -565,10 +565,307 @@ let timeOfDay = {
 	},
 };
 
+let items = {
+	options: {
+		scales: {
+			yAxes: [
+				{
+					gridLines: {
+						color: colors.gray[900],
+						zeroLineColor: colors.gray[900],
+					},
+					ticks: {
+						callback: function (value) {
+							if (!(value % 10)) {
+								return "$" + value;
+							}
+						},
+					},
+				},
+			],
+		},
+		tooltips: {
+			callbacks: {
+				label: function (item, data) {
+					var label = data.datasets[item.datasetIndex].label || "";
+					var yLabel = item.yLabel;
+					var content = "";
+
+					if (data.datasets.length > 1) {
+						content += label;
+					}
+
+					content += ": $" + yLabel;
+					return content;
+				},
+			},
+		},
+	},
+	data1: (canvas) => {
+		return {
+			labels: [
+				"8 AM",
+				"9 AM",
+				"10 AM",
+				"11 AM",
+				"12 PM",
+				"1 PM",
+				"2 PM",
+				"3 PM",
+				"4 PM",
+				"5 PM",
+				"6 PM",
+				"7 PM",
+				"8 PM",
+				"9 PM",
+				"10 PM",
+				"11 PM",
+			],
+			datasets: [
+				{
+					label: "Pizzas",
+					data: [
+						0,
+						2,
+						80,
+						100,
+						850,
+						900,
+						840,
+						600,
+						450,
+						1075,
+						1250,
+						1500,
+						1250,
+						1100,
+						450,
+						400,
+					],
+				},
+				{
+					label: "Pastas",
+					data: [
+						0,
+						0,
+						85,
+						50,
+						650,
+						750,
+						460,
+						405,
+						400,
+						625,
+						750,
+						600,
+						450,
+						500,
+						300,
+						350,
+					],
+				},
+				{
+					label: "Drinks",
+					data: [
+						0,
+						0,
+						0,
+						0,
+						100,
+						135,
+						50,
+						45,
+						50,
+						340,
+						550,
+						750,
+						900,
+						850,
+						350,
+						275,
+					],
+				},
+				{
+					label: "Salads",
+					data: [
+						0,
+						58,
+						100,
+						120,
+						400,
+						405,
+						130,
+						200,
+						250,
+						460,
+						500,
+						450,
+						300,
+						150,
+						50,
+						25,
+					],
+				},
+				{
+					label: "Calzones",
+					data: [
+						0,
+						40,
+						35,
+						20,
+						200,
+						310,
+						120,
+						150,
+						150,
+						300,
+						150,
+						200,
+						200,
+						200,
+						150,
+						50,
+					],
+				},
+			],
+		};
+	},
+	data2: (canvas) => {
+		return {
+			labels: [
+				"8 AM",
+				"9 AM",
+				"10 AM",
+				"11 AM",
+				"12 PM",
+				"1 PM",
+				"2 PM",
+				"3 PM",
+				"4 PM",
+				"5 PM",
+				"6 PM",
+				"7 PM",
+				"8 PM",
+				"9 PM",
+				"10 PM",
+				"11 PM",
+			],
+			datasets: [
+				{
+					label: "Pizzas",
+					data: [
+						0,
+						102,
+						130,
+						150,
+						825,
+						900,
+						840,
+						600,
+						450,
+						1075,
+						1250,
+						1500,
+						1250,
+						1100,
+						450,
+						400,
+					],
+				},
+				{
+					label: "Pastas",
+					data: [
+						0,
+						0,
+						135,
+						100,
+						625,
+						750,
+						460,
+						405,
+						400,
+						625,
+						750,
+						600,
+						450,
+						500,
+						300,
+						350,
+					],
+				},
+				{
+					label: "Drinks",
+					data: [
+						0,
+						0,
+						0,
+						0,
+						50,
+						135,
+						50,
+						45,
+						50,
+						340,
+						550,
+						750,
+						900,
+						850,
+						350,
+						275,
+					],
+				},
+				{
+					label: "Salads",
+					data: [
+						100,
+						58,
+						100,
+						120,
+						400,
+						405,
+						130,
+						200,
+						250,
+						460,
+						500,
+						450,
+						300,
+						150,
+						50,
+						25,
+					],
+				},
+				{
+					label: "Calzones",
+					data: [
+						0,
+						40,
+						35,
+						20,
+						200,
+						310,
+						120,
+						150,
+						150,
+						300,
+						150,
+						200,
+						200,
+						200,
+						150,
+						50,
+					],
+				},
+			],
+		};
+	},
+};
+
 module.exports = {
 	chartOptions,
 	parseOptions,
 	sales,
 	orders,
 	timeOfDay,
+	items,
 };

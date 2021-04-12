@@ -38,15 +38,37 @@ import {
 	Col,
 } from "reactstrap";
 
+// core components
+import {
+	chartOptions,
+	parseOptions,
+	sales,
+	orders,
+	timeOfDay,
+} from "variables/charts.js";
+
 import Header from "components/Headers/Header.js";
 
-const PaymentsDashboard = () => {
+const DiscountsDashboard = (props) => {
+	const [activeNav, setActiveNav] = useState(1);
+	const [salesData, setSalesData] = useState("data1");
+
+	if (window.Chart) {
+		parseOptions(Chart, chartOptions());
+	}
+
+	const toggleNavs = (e, index) => {
+		e.preventDefault();
+		setActiveNav(index);
+		setSalesData("data" + index);
+	};
+
 	return (
 		<>
 			<Header />
 
 			<Container className="mt--7" fluid>
-				<Row>
+				<Row className="mt-5">
 					<Col className="mb-5 mb-xl-0" xl="12">
 						<Card className="shadow">
 							<CardHeader className="border-0">
@@ -69,76 +91,54 @@ const PaymentsDashboard = () => {
 								<tbody>
 									<tr>
 										<th scope="row">
-											<b>Card Transactions</b>
+											<b>10% Coupon Usage Rate</b>
 										</th>
 										<td>
-											<b>2,589</b>
+											<b>2%</b>
 										</td>
-										<td>2,203</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Swiped</th>
 										<td>
-											<b>2,555</b>
-										</td>
-										<td>2,179</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Keyed</th>
-										<td>
-											<b>32</b>
-										</td>
-										<td>24</td>
-									</tr>
-
-									<tr>
-										<th scope="row">Other</th>
-										<td>
-											<b>2</b>
-										</td>
-										<td>0</td>
-									</tr>
-
-									<tr>
-										<th scope="row">
-											<b>Cash Transactions</b>
-										</th>
-										<td>10</td>
-										<td>
-											<b>248</b>
+											<b>2%</b>
 										</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
-											<b>Gift Card Transactions</b>
+											<b>15% Coupon Usage Rate</b>
 										</th>
-										<td>0</td>
 										<td>
-											<b>38</b>
+											<b>13%</b>
+										</td>
+										<td>11%</td>
+									</tr>
+
+									<tr>
+										<th scope="row">
+											<b>20% Coupon Usage Rate</b>
+										</th>
+										<td>13%</td>
+										<td>
+											<b>18%</b>
 										</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
-											<b>Other</b>
+											<b>25% Coupon Usage Rate</b>
 										</th>
 										<td>
-											<b>18</b>
+											<b>18%</b>
 										</td>
-										<td>15</td>
+										<td>17%</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
-											<b>Total</b>
+											<b>30% Coupon Usage Rate</b>
 										</th>
+										<td>20%</td>
 										<td>
-											<b>2,617</b>
+											<b>25%</b>
 										</td>
-										<td>2,504</td>
 									</tr>
 								</tbody>
 							</Table>
@@ -150,4 +150,4 @@ const PaymentsDashboard = () => {
 	);
 };
 
-export default PaymentsDashboard;
+export default DiscountsDashboard;
