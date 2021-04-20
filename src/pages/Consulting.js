@@ -31,13 +31,13 @@ import {
 	Col,
 } from "reactstrap";
 // core components
-import UserHeader from "components/Headers/UserHeader.js";
+import ConsultingHeader from "components/Headers/ConsultingHeader.js";
 
 const Consulting = () => {
 	return (
 		<>
-			<UserHeader />
-			{/* Page content */}
+			<ConsultingHeader />
+
 			<Container className="mt--7" fluid>
 				<Row className="mb-7">
 					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
@@ -50,14 +50,14 @@ const Consulting = () => {
 												alt="..."
 												className="rounded-circle"
 												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
+													require("../assets/img/headshots/ken.jpeg").default
 												}
 											/>
 										</a>
 									</div>
 								</Col>
 							</Row>
+
 							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
 								<div className="d-flex justify-content-between">
 									<Button
@@ -69,6 +69,7 @@ const Consulting = () => {
 									>
 										Connect
 									</Button>
+
 									<Button
 										className="float-right"
 										color="default"
@@ -80,6 +81,7 @@ const Consulting = () => {
 									</Button>
 								</div>
 							</CardHeader>
+
 							<CardBody className="pt-0 pt-md-4">
 								<Row>
 									<div className="col">
@@ -89,28 +91,27 @@ const Consulting = () => {
 												<span className="description">Years</span>
 											</div>
 											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
+												<span className="heading">18</span>
+												<span className="description">Clients</span>
 											</div>
 											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
+												<span className="heading">4.8</span>
+												<span className="description">Rating</span>
 											</div>
 										</div>
 									</div>
 								</Row>
 								<div className="text-center">
-									<h3>La Val's Pizza</h3>
+									<h3>Ken Sandy</h3>
 									<div className="h5 font-weight-300">
 										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
+										Product Manager at MasterClass
 									</div>
 									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
+									<p>
+										With over 20 years of experience, I've helped companies of
+										all sizes successfully launch new products.
+									</p>
 								</div>
 							</CardBody>
 						</Card>
@@ -126,8 +127,7 @@ const Consulting = () => {
 												alt="..."
 												className="rounded-circle"
 												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
+													require("../assets/img/headshots/sajal.jpeg").default
 												}
 											/>
 										</a>
@@ -161,32 +161,31 @@ const Consulting = () => {
 									<div className="col">
 										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
 											<div>
-												<span className="heading">22</span>
+												<span className="heading">3</span>
 												<span className="description">Years</span>
 											</div>
 											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
+												<span className="heading">2</span>
+												<span className="description">Clients</span>
 											</div>
 											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
+												<span className="heading">4.6</span>
+												<span className="description">Rating</span>
 											</div>
 										</div>
 									</div>
 								</Row>
 								<div className="text-center">
-									<h3>La Val's Pizza</h3>
+									<h3>Sajal Sharma</h3>
 									<div className="h5 font-weight-300">
 										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
+										Engineering Manager at Square Insights
 									</div>
 									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
+									<p>
+										A recent grad of UC Berkeley, I'm always looking to work on
+										challenging and rewarding projects.
+									</p>
 								</div>
 							</CardBody>
 						</Card>
@@ -202,8 +201,7 @@ const Consulting = () => {
 												alt="..."
 												className="rounded-circle"
 												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
+													require("../assets/img/headshots/felipe.jpeg").default
 												}
 											/>
 										</a>
@@ -237,492 +235,31 @@ const Consulting = () => {
 									<div className="col">
 										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
 											<div>
-												<span className="heading">22</span>
+												<span className="heading">2</span>
 												<span className="description">Years</span>
 											</div>
 											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
+												<span className="heading">5</span>
+												<span className="description">Clients</span>
 											</div>
 											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
+												<span className="heading">4.9</span>
+												<span className="description">Rating</span>
 											</div>
 										</div>
 									</div>
 								</Row>
 								<div className="text-center">
-									<h3>La Val's Pizza</h3>
+									<h3>Felipe Barragan</h3>
 									<div className="h5 font-weight-300">
 										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
+										CEO at Square Insights
 									</div>
 									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-				</Row>
-
-				<Row className="mb-7">
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-						<Card className="card-profile shadow">
-							<Row className="justify-content-center">
-								<Col className="order-lg-2" lg="3">
-									<div className="card-profile-image">
-										<a href="#pablo" onClick={(e) => e.preventDefault()}>
-											<img
-												alt="..."
-												className="rounded-circle"
-												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
-												}
-											/>
-										</a>
-									</div>
-								</Col>
-							</Row>
-							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-								<div className="d-flex justify-content-between">
-									<Button
-										className="mr-4"
-										color="info"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Connect
-									</Button>
-									<Button
-										className="float-right"
-										color="default"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Message
-									</Button>
-								</div>
-							</CardHeader>
-							<CardBody className="pt-0 pt-md-4">
-								<Row>
-									<div className="col">
-										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
-											<div>
-												<span className="heading">22</span>
-												<span className="description">Years</span>
-											</div>
-											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
-											</div>
-											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
-											</div>
-										</div>
-									</div>
-								</Row>
-								<div className="text-center">
-									<h3>La Val's Pizza</h3>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
-									</div>
-									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-						<Card className="card-profile shadow">
-							<Row className="justify-content-center">
-								<Col className="order-lg-2" lg="3">
-									<div className="card-profile-image">
-										<a href="#pablo" onClick={(e) => e.preventDefault()}>
-											<img
-												alt="..."
-												className="rounded-circle"
-												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
-												}
-											/>
-										</a>
-									</div>
-								</Col>
-							</Row>
-							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-								<div className="d-flex justify-content-between">
-									<Button
-										className="mr-4"
-										color="info"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Connect
-									</Button>
-									<Button
-										className="float-right"
-										color="default"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Message
-									</Button>
-								</div>
-							</CardHeader>
-							<CardBody className="pt-0 pt-md-4">
-								<Row>
-									<div className="col">
-										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
-											<div>
-												<span className="heading">22</span>
-												<span className="description">Years</span>
-											</div>
-											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
-											</div>
-											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
-											</div>
-										</div>
-									</div>
-								</Row>
-								<div className="text-center">
-									<h3>La Val's Pizza</h3>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
-									</div>
-									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-						<Card className="card-profile shadow">
-							<Row className="justify-content-center">
-								<Col className="order-lg-2" lg="3">
-									<div className="card-profile-image">
-										<a href="#pablo" onClick={(e) => e.preventDefault()}>
-											<img
-												alt="..."
-												className="rounded-circle"
-												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
-												}
-											/>
-										</a>
-									</div>
-								</Col>
-							</Row>
-							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-								<div className="d-flex justify-content-between">
-									<Button
-										className="mr-4"
-										color="info"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Connect
-									</Button>
-									<Button
-										className="float-right"
-										color="default"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Message
-									</Button>
-								</div>
-							</CardHeader>
-							<CardBody className="pt-0 pt-md-4">
-								<Row>
-									<div className="col">
-										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
-											<div>
-												<span className="heading">22</span>
-												<span className="description">Years</span>
-											</div>
-											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
-											</div>
-											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
-											</div>
-										</div>
-									</div>
-								</Row>
-								<div className="text-center">
-									<h3>La Val's Pizza</h3>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
-									</div>
-									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-				</Row>
-
-				<Row className="mb-7">
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-						<Card className="card-profile shadow">
-							<Row className="justify-content-center">
-								<Col className="order-lg-2" lg="3">
-									<div className="card-profile-image">
-										<a href="#pablo" onClick={(e) => e.preventDefault()}>
-											<img
-												alt="..."
-												className="rounded-circle"
-												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
-												}
-											/>
-										</a>
-									</div>
-								</Col>
-							</Row>
-							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-								<div className="d-flex justify-content-between">
-									<Button
-										className="mr-4"
-										color="info"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Connect
-									</Button>
-									<Button
-										className="float-right"
-										color="default"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Message
-									</Button>
-								</div>
-							</CardHeader>
-							<CardBody className="pt-0 pt-md-4">
-								<Row>
-									<div className="col">
-										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
-											<div>
-												<span className="heading">22</span>
-												<span className="description">Years</span>
-											</div>
-											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
-											</div>
-											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
-											</div>
-										</div>
-									</div>
-								</Row>
-								<div className="text-center">
-									<h3>La Val's Pizza</h3>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
-									</div>
-									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-						<Card className="card-profile shadow">
-							<Row className="justify-content-center">
-								<Col className="order-lg-2" lg="3">
-									<div className="card-profile-image">
-										<a href="#pablo" onClick={(e) => e.preventDefault()}>
-											<img
-												alt="..."
-												className="rounded-circle"
-												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
-												}
-											/>
-										</a>
-									</div>
-								</Col>
-							</Row>
-							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-								<div className="d-flex justify-content-between">
-									<Button
-										className="mr-4"
-										color="info"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Connect
-									</Button>
-									<Button
-										className="float-right"
-										color="default"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Message
-									</Button>
-								</div>
-							</CardHeader>
-							<CardBody className="pt-0 pt-md-4">
-								<Row>
-									<div className="col">
-										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
-											<div>
-												<span className="heading">22</span>
-												<span className="description">Years</span>
-											</div>
-											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
-											</div>
-											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
-											</div>
-										</div>
-									</div>
-								</Row>
-								<div className="text-center">
-									<h3>La Val's Pizza</h3>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
-									</div>
-									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
-								</div>
-							</CardBody>
-						</Card>
-					</Col>
-
-					<Col className="order-xl-2 mb-5 mb-xl-0" xl="4">
-						<Card className="card-profile shadow">
-							<Row className="justify-content-center">
-								<Col className="order-lg-2" lg="3">
-									<div className="card-profile-image">
-										<a href="#pablo" onClick={(e) => e.preventDefault()}>
-											<img
-												alt="..."
-												className="rounded-circle"
-												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
-												}
-											/>
-										</a>
-									</div>
-								</Col>
-							</Row>
-							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
-								<div className="d-flex justify-content-between">
-									<Button
-										className="mr-4"
-										color="info"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Connect
-									</Button>
-									<Button
-										className="float-right"
-										color="default"
-										href="#pablo"
-										onClick={(e) => e.preventDefault()}
-										size="sm"
-									>
-										Message
-									</Button>
-								</div>
-							</CardHeader>
-							<CardBody className="pt-0 pt-md-4">
-								<Row>
-									<div className="col">
-										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
-											<div>
-												<span className="heading">22</span>
-												<span className="description">Years</span>
-											</div>
-											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
-											</div>
-											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
-											</div>
-										</div>
-									</div>
-								</Row>
-								<div className="text-center">
-									<h3>La Val's Pizza</h3>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
-									</div>
-									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
+									<p>
+										A true Renaissance man, I have lead numerous teams to
+										success.
+									</p>
 								</div>
 							</CardBody>
 						</Card>
@@ -740,14 +277,14 @@ const Consulting = () => {
 												alt="..."
 												className="rounded-circle"
 												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
+													require("../assets/img/headshots/khushi.jpeg").default
 												}
 											/>
 										</a>
 									</div>
 								</Col>
 							</Row>
+
 							<CardHeader className="text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
 								<div className="d-flex justify-content-between">
 									<Button
@@ -759,6 +296,7 @@ const Consulting = () => {
 									>
 										Connect
 									</Button>
+
 									<Button
 										className="float-right"
 										color="default"
@@ -770,37 +308,37 @@ const Consulting = () => {
 									</Button>
 								</div>
 							</CardHeader>
+
 							<CardBody className="pt-0 pt-md-4">
 								<Row>
 									<div className="col">
 										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
 											<div>
-												<span className="heading">22</span>
+												<span className="heading">2</span>
 												<span className="description">Years</span>
 											</div>
 											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
+												<span className="heading">4</span>
+												<span className="description">Clients</span>
 											</div>
 											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
+												<span className="heading">4.6</span>
+												<span className="description">Rating</span>
 											</div>
 										</div>
 									</div>
 								</Row>
 								<div className="text-center">
-									<h3>La Val's Pizza</h3>
+									<h3>Khushi Malde</h3>
 									<div className="h5 font-weight-300">
 										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
+										Head of Marketing at Square Insights
 									</div>
 									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
+									<p>
+										With over 20 years of experience, I've helped companies of
+										all sizes successfully launch new products.
+									</p>
 								</div>
 							</CardBody>
 						</Card>
@@ -816,8 +354,7 @@ const Consulting = () => {
 												alt="..."
 												className="rounded-circle"
 												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
+													require("../assets/img/headshots/apurva.jpeg").default
 												}
 											/>
 										</a>
@@ -851,32 +388,31 @@ const Consulting = () => {
 									<div className="col">
 										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
 											<div>
-												<span className="heading">22</span>
+												<span className="heading">3</span>
 												<span className="description">Years</span>
 											</div>
 											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
+												<span className="heading">3</span>
+												<span className="description">Clients</span>
 											</div>
 											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
+												<span className="heading">4.6</span>
+												<span className="description">Rating</span>
 											</div>
 										</div>
 									</div>
 								</Row>
 								<div className="text-center">
-									<h3>La Val's Pizza</h3>
+									<h3>Apurva Rastogi</h3>
 									<div className="h5 font-weight-300">
 										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
+										Head of Product Research at Square Insights
 									</div>
 									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
+									<p>
+										A recent grad of UC Berkeley, I'm always looking to work on
+										challenging and rewarding projects.
+									</p>
 								</div>
 							</CardBody>
 						</Card>
@@ -892,8 +428,7 @@ const Consulting = () => {
 												alt="..."
 												className="rounded-circle"
 												src={
-													require("../assets/img/theme/team-4-800x800.jpg")
-														.default
+													require("../assets/img/headshots/james.jpeg").default
 												}
 											/>
 										</a>
@@ -927,32 +462,31 @@ const Consulting = () => {
 									<div className="col">
 										<div className="card-profile-stats d-flex justify-content-center mt-md-5">
 											<div>
-												<span className="heading">22</span>
+												<span className="heading">3</span>
 												<span className="description">Years</span>
 											</div>
 											<div>
-												<span className="heading">50000</span>
-												<span className="description">Customers</span>
+												<span className="heading">3</span>
+												<span className="description">Clients</span>
 											</div>
 											<div>
-												<span className="heading">3</span>
-												<span className="description">Locations</span>
+												<span className="heading">4.6</span>
+												<span className="description">Rating</span>
 											</div>
 										</div>
 									</div>
 								</Row>
 								<div className="text-center">
-									<h3>La Val's Pizza</h3>
+									<h3>James Cheng</h3>
 									<div className="h5 font-weight-300">
 										<i className="ni location_pin mr-2" />
-										1834 Euclid Ave
-									</div>
-									<div className="h5 font-weight-300">
-										<i className="ni location_pin mr-2" />
-										Berkeley, CA 94709
+										Product Manager at Square Insights
 									</div>
 									<hr className="my-4" />
-									<p>UC Berkeley's premier pizzeria.</p>
+									<p>
+										A true Renaissance man, I have successfully lead numerous
+										teams to success.
+									</p>
 								</div>
 							</CardBody>
 						</Card>

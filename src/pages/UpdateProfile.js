@@ -31,13 +31,13 @@ import {
 	Col,
 } from "reactstrap";
 // core components
-import UserHeader from "components/Headers/UserHeader.js";
+import UpdateProfileHeader from "components/Headers/UpdateProfileHeader.js";
 
 const UpdateProfile = () => {
 	return (
 		<>
-			<UserHeader />
-			{/* Page content */}
+			<UpdateProfileHeader />
+
 			<Container className="mt--7" fluid>
 				<Row>
 					<Col className="order-xl-1" xl="12">

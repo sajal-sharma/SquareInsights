@@ -20,7 +20,7 @@ import React from "react";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
-const UserHeader = () => {
+const ConsultingHeader = () => {
 	return (
 		<>
 			<div
@@ -35,24 +35,17 @@ const UserHeader = () => {
 					backgroundPosition: "center top",
 				}}
 			>
-				{/* Mask */}
 				<span className="mask bg-gradient-default opacity-8" />
-				{/* Header container */}
+
 				<Container className="d-flex align-items-center" fluid>
 					<Row>
 						<Col lg="7" md="10">
-							<h1 className="display-2 text-white">La Val's Pizza</h1>
+							<h1 className="display-2 text-white">Consultants</h1>
 							<p className="text-white mt-0 mb-5">
-								This is how your profile page looks to consultants and other
-								businesses.
+								Find the consultants for all your needs, from financial
+								accountants and lawyers to operations engineers and product
+								managers.
 							</p>
-							<Button
-								color="info"
-								href="#pablo"
-								onClick={(e) => e.preventDefault()}
-							>
-								Edit Profile
-							</Button>
 						</Col>
 					</Row>
 				</Container>
@@ -61,4 +54,4 @@ const UserHeader = () => {
 	);
 };
 
-export default UserHeader;
+export default ConsultingHeader;
