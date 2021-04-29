@@ -93,11 +93,9 @@ const DiscountsDashboard = (props) => {
 										<th scope="row">
 											<b>10% Coupon Usage Rate</b>
 										</th>
+										<td>NA</td>
 										<td>
-											<b>2%</b>
-										</td>
-										<td>
-											<b>2%</b>
+											<b>9%</b>
 										</td>
 									</tr>
 
@@ -106,16 +104,16 @@ const DiscountsDashboard = (props) => {
 											<b>15% Coupon Usage Rate</b>
 										</th>
 										<td>
-											<b>13%</b>
+											<b>8%</b>
 										</td>
-										<td>11%</td>
+										<td>7%</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
 											<b>20% Coupon Usage Rate</b>
 										</th>
-										<td>13%</td>
+										<td>NA</td>
 										<td>
 											<b>18%</b>
 										</td>
@@ -126,18 +124,18 @@ const DiscountsDashboard = (props) => {
 											<b>25% Coupon Usage Rate</b>
 										</th>
 										<td>
-											<b>18%</b>
+											<b>15%</b>
 										</td>
-										<td>17%</td>
+										<td>13%</td>
 									</tr>
 
 									<tr>
 										<th scope="row">
 											<b>30% Coupon Usage Rate</b>
 										</th>
-										<td>20%</td>
+										<td>NA</td>
 										<td>
-											<b>25%</b>
+											<b>31%</b>
 										</td>
 									</tr>
 								</tbody>
